@@ -8,7 +8,7 @@ Este repositório reúne exclusivamente projetos de estudo. Projetos desenvolvid
 
 ## 📂 Projetos
 
-### 01. Tela de Login e Cadastro
+### 01. Tela de Login e Cadastro (app-login)
 
 Projeto desenvolvido acompanhando o vídeo [React Native em 2026: Guia Prático e Completo para Começar do Zero](https://www.youtube.com/watch?v=7uGjAMhI8G4&t=301s), dos canais **Rodrigo Gonçalves e Rocketseat**.
 
@@ -18,7 +18,6 @@ Projeto desenvolvido acompanhando o vídeo [React Native em 2026: Guia Prático 
 |:---:|:---:|
 | <img src="./app-login/src/assets/readme/signInScreen.png" width="250"> | <img src="./app-login/src/assets/readme/signUpScreen.png" width="250"> |
 
-**Conteúdos aprendidos**
 
 ### 📚 Conteúdos aprendidos
 
