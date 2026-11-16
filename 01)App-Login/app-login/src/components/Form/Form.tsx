@@ -1,4 +1,4 @@
-import { Alert, StyleSheet, View } from "react-native";
+import { Alert, StyleSheet, Text, View } from "react-native";
 import { Input } from "./Input";
 import { Button } from "./Button";
 import { useState } from "react";
@@ -21,11 +21,16 @@ export function Form ({type}) {
 
     const handleSubmit = (type) => {
 
+        const message = type === "signIn" ? "Login" : "Cadastro"
+
+        if(type === "signIn"){
+
+        }
         if(!ValidateForm(inputs.email) || !ValidateForm(inputs.password)){
-            Alert.alert("Login não realizador")
+            Alert.alert(`${message} não realizado`, "Caractere mínimo por campo:3")
         }
         else{
-            Alert.alert("Login realizado", `Logado com ${inputs.email}`)
+            Alert.alert(`${message} realizado`, `Logado com ${inputs.email}`)
         }
 
 
@@ -44,7 +49,7 @@ export function Form ({type}) {
 
 const styles = StyleSheet.create({
     formContainer:{
-        marginTop:20,
-        gap:10
+        marginTop:24,
+        gap:12
     },
 })

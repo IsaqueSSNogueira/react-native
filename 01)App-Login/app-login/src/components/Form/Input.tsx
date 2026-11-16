@@ -15,7 +15,13 @@ export function Input ({ type, ...rest}) {
 const styles = StyleSheet.create({
 
     input:{
-        padding: 5
+        width:"100%",
+        height: 48,
+        borderWidth:1,
+        borderColor: "#DCDCDC",
+        borderRadius: 8,
+        fontSize:16, 
+        paddingLeft: 12
     }
 
 })

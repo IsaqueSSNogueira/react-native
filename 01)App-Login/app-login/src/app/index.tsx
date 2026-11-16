@@ -10,11 +10,11 @@ export default function Index ()  {
 
 
     return(
-        <KeyboardAvoidingView style={{flex: 1}} behavior={Platform.select( { ios: "padding", android: "height"})}>
-            <ScrollView contentContainerStyle={{flexGrow:1, padding:20}} keyboardShouldPersistTaps="handled">
-                <Header img={signInImg} />
+        <KeyboardAvoidingView style={styles.container} behavior={Platform.select( { ios: "padding", android: "height"})}>
+            <ScrollView contentContainerStyle={{flexGrow:1}} keyboardShouldPersistTaps="handled">
+                <Header img={signInImg} type="signIn" />
                 <Form type="signIn" />
-                <Footer link="/signUp" />
+                <Footer link="/signUp" type="signIn" />
             </ScrollView>
         </KeyboardAvoidingView>
     )
@@ -23,5 +23,9 @@ export default function Index ()  {
 
 
 const styles = StyleSheet.create({
-
+    container:{
+        flex:1,
+        padding:32,
+        backgroundColor:"#FDFDFD"
+    }
 })

@@ -6,15 +6,15 @@ import { Form } from "@/components/Form/Form"
 import { Footer } from "@/components/Footer/Footer"
 
 
-export default function Index ()  {
+export default function SignUp ()  {
 
 
     return(
-        <KeyboardAvoidingView style={{flex: 1}} behavior={Platform.select( { ios: "padding", android: "height"})}>
-            <ScrollView contentContainerStyle={{flexGrow:1, padding:20}} keyboardShouldPersistTaps="handled">
-                <Header img={signUpImg} />
+        <KeyboardAvoidingView style={styles.container} behavior={Platform.select( { ios: "padding", android: "height"})}>
+            <ScrollView contentContainerStyle={{flexGrow:1}} keyboardShouldPersistTaps="handled">
+                <Header img={signUpImg} type="signUp" />
                 <Form type="signUp" />
-                <Footer link="/" />
+                <Footer link="/" type="signUp" />
             </ScrollView>
         </KeyboardAvoidingView>
     )
@@ -23,5 +23,10 @@ export default function Index ()  {
 
 
 const styles = StyleSheet.create({
+    container:{
+        flex:1,
+        padding:32,
+        backgroundColor:"#FDFDFD"
+    }
 
 })
