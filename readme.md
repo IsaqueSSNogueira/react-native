@@ -16,7 +16,7 @@ Projeto desenvolvido acompanhando o vídeo [React Native em 2026: Guia Prático 
 
 | Tela de Login | Tela de Cadastro |
 |:---:|:---:|
-| ![Tela de Login](./app-login/src/assets/readme/signInScreen.png) | ![Tela de Cadastro](./app-login/src/assets/readme/signUpScreen.png) |
+| <img src="./app-login/src/assets/readme/signInScreen.png" width="250"> | <img src="./app-login/src/assets/readme/signUpScreen.png" width="250"> |
 
 **Conteúdos aprendidos**
 
